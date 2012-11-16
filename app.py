@@ -1,7 +1,9 @@
 import flask
 from flask import render_template
+import helpers
 
 app = flask.Flask(__name__)
+helpers.load(app)
 
 @app.route("/")
 def home():
